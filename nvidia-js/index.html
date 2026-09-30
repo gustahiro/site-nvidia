@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NVIDIA | Computação acelerada</title>
+  <!-- Biblioteca 2: Swiper (carrossel) - CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#">NVIDIA</a>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#desempenho">Desempenho</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="anima">Computação acelerada para a era da IA</h1>
+      <p class="anima">GPUs, software e plataformas que movem jogos, ciência, robótica e os maiores modelos de IA do mundo.</p>
+      <a class="botao anima" href="#produtos">Conheça os produtos</a>
+    </section>
+
+    <section id="produtos" class="secao">
+      <h2>Produtos e plataformas</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide cartao"><span class="tag">Jogos</span><h3>GeForce RTX</h3><p>Placas de vídeo com ray tracing e DLSS para jogar com gráficos realistas.</p></article>
+          <article class="swiper-slide cartao"><span class="tag">IA</span><h3>Data Center</h3><p>GPUs e redes para treinar e executar modelos de inteligência artificial em escala.</p></article>
+          <article class="swiper-slide cartao"><span class="tag">Robótica</span><h3>Jetson</h3><p>Módulos compactos para levar IA a robôs, drones e dispositivos de borda.</p></article>
+          <article class="swiper-slide cartao"><span class="tag">Automotivo</span><h3>NVIDIA DRIVE</h3><p>Plataforma de computação para veículos autônomos.</p></article>
+          <article class="swiper-slide cartao"><span class="tag">Simulação</span><h3>Omniverse</h3><p>Plataforma para criar gêmeos digitais e mundos 3D colaborativos.</p></article>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section id="desempenho" class="faixa">
+      <h2>Desempenho por geração (exemplo ilustrativo)</h2>
+      <p>Valores fictícios, só para demonstrar o gráfico da biblioteca Chart.js.</p>
+      <div class="grafico"><canvas id="grafico"></canvas></div>
+    </section>
+
+    <section id="sobre" class="secao">
+      <h2>Sobre este projeto</h2>
+      <p class="texto">Página feita com HTML, CSS e três bibliotecas JavaScript (GSAP, Swiper e Chart.js), inspirada no visual do site da NVIDIA. Projeto escolar, sem fins comerciais.</p>
+    </section>
+  </main>
+
+  <footer class="rodape"><p>&copy; NVIDIA &mdash; projeto escolar de demonstração.</p></footer>
+
+  <!-- Bibliotecas JavaScript (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
