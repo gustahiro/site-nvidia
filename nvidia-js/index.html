@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NVIDIA | Computação acelerada</title>
+  <!-- Bibliotecas (CSS): AOS, Swiper e Coloris -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#">NVIDIA</a>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#ia">IA</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <label class="cor">Cor de destaque
+      <input type="text" id="seletor-cor" class="coloris" value="#76b900" readonly>
+    </label>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 data-aos="fade-up">Computação acelerada para a era da IA</h1>
+      <p data-aos="fade-up" data-aos-delay="150">GPUs, software e plataformas que movem jogos, ciência, robótica e os maiores modelos de IA do mundo.</p>
+      <a class="botao" data-aos="fade-up" data-aos-delay="300" href="#produtos">Conheça os produtos</a>
+    </section>
+
+    <section id="produtos" class="secao">
+      <h2 data-aos="fade-right">Produtos e plataformas</h2>
+      <div class="swiper" data-aos="zoom-in">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide cartao"><span class="tag">Jogos</span><h3>GeForce RTX</h3><p>Placas de vídeo com ray tracing e DLSS para jogar com gráficos realistas.</p></article>
+          <article class="swiper-slide cartao"><span class="tag">IA</span><h3>Data Center</h3><p>GPUs e redes para treinar e executar modelos de inteligência artificial em escala.</p></article>
+          <article class="swiper-slide cartao"><span class="tag">Robótica</span><h3>Jetson</h3><p>Módulos compactos para levar IA a robôs, drones e dispositivos de borda.</p></article>
+          <article class="swiper-slide cartao"><span class="tag">Automotivo</span><h3>NVIDIA DRIVE</h3><p>Plataforma de computação para veículos autônomos.</p></article>
+          <article class="swiper-slide cartao"><span class="tag">Simulação</span><h3>Omniverse</h3><p>Plataforma para criar gêmeos digitais e mundos 3D colaborativos.</p></article>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section id="ia" class="faixa">
+      <h2 data-aos="fade-left">IA para todos os setores</h2>
+      <p data-aos="fade-left" data-aos-delay="150">Da saúde às cidades inteligentes, a computação acelerada reduz o tempo de pesquisa e de resposta.</p>
+    </section>
+
+    <section id="sobre" class="secao">
+      <h2 data-aos="fade-up">Sobre este projeto</h2>
+      <p class="texto" data-aos="fade-up">Página feita com HTML, CSS e três bibliotecas JavaScript (AOS, Swiper e Coloris), inspirada no visual do site da NVIDIA. Projeto escolar, sem fins comerciais.</p>
+    </section>
+  </main>
+
+  <footer class="rodape"><p>&copy; NVIDIA &mdash; projeto escolar de demonstração.</p></footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
