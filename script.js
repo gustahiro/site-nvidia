@@ -3,7 +3,7 @@ const suporteHover = window.matchMedia("(hover: hover) and (pointer: fine)");
 let efeitoHero;
 let efeitoDemo;
 
-if (!movimentoReduzido.matches && window.innerWidth > 600 && window.VANTA && window.VANTA.NET) {
+if (window.VANTA && window.VANTA.NET) {
   efeitoHero = window.VANTA.NET({
     el: document.querySelector(".hero"),
     color: 0x76b900,
@@ -20,7 +20,7 @@ if (!movimentoReduzido.matches && window.innerWidth > 600 && window.VANTA && win
   });
 }
 
-if (!movimentoReduzido.matches && window.innerWidth > 600 && window.VANTA && window.VANTA.NET) {
+if (window.VANTA && window.VANTA.NET) {
   efeitoDemo = window.VANTA.NET({
     el: document.querySelector("#vanta-demo"),
     color: 0x76b900,
